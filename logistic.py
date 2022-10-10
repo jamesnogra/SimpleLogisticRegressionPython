@@ -12,11 +12,11 @@ dataset = pd.read_csv('flu_covid_colds_activity.csv')
 plt.ylabel('Prognosis')
 plt.xlabel('Temperature')
 plt.scatter(dataset.temperature, dataset.prognosis)
-plt.show()
+#plt.show()
 plt.ylabel('Prognosis')
 plt.xlabel('Num People at Home')
 plt.scatter(dataset.num_people_at_home, dataset.prognosis)
-plt.show()
+#plt.show()
 
 # Convert strings to numeric
 dataset.body_aches = dataset.body_aches.replace(to_replace=['no', 'yes'], value=[0, 1])
